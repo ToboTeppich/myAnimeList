@@ -3274,44 +3274,44 @@ tbody:has(.list-table-header){
     border-radius: 10px;
 }
 @media (max-width: 1600px) { /* 5 thumbnails layout */
-    .list-item:nth-child(5n +1).list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:nth-child(5n +1).list-table-data:hover::after{
+    .list-item:nth-child(5n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:nth-child(5n +1) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
     }
 }
 @media (max-width: 1230px) { /* 5 thumbnails layout */
-    .list-item:nth-child(5n).list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:nth-child(5n).list-table-data:hover::after{
+    .list-item:nth-child(5n) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:nth-child(5n) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
     }
 }
 @media (max-width: 1016px) { /* 4 thumbnails layout */
-    .list-item:where(:nth-child(5n), :nth-child(5n +1)).list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:where(:nth-child(5n), :nth-child(5n +1)).list-table-data:hover::after{
+    .list-item:where(:nth-child(5n), :nth-child(5n +1)) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:where(:nth-child(5n), :nth-child(5n +1)) .list-table-data:hover::after{
         left: auto;
     }
-    .list-item:where(:nth-child(4n), :nth-child(4n +1)).list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:where(:nth-child(4n), :nth-child(4n +1)).list-table-data:hover::after{
+    .list-item:where(:nth-child(4n), :nth-child(4n +1)) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:where(:nth-child(4n), :nth-child(4n +1)) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
     }
 }
 @media (max-width: 815px) { /* 3 thumbnails layout */
-    .list-item:where(:nth-child(4n), :nth-child(4n +1)).list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:where(:nth-child(4n), :nth-child(4n +1)).list-table-data:hover::after{
+    .list-item:where(:nth-child(4n), :nth-child(4n +1)) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:where(:nth-child(4n), :nth-child(4n +1)) .list-table-data:hover::after{
         left: auto;
     }
-    .list-item:nth-child(3n +1).list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:nth-child(3n +1).list-table-data:hover::after{
+    .list-item:nth-child(3n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:nth-child(3n +1) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
     }
 }
 @media (max-width: 612px) { /* 2 thumbnails layout */
-    .list-item:nth-child(3n +1).list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:nth-child(3n +1).list-table-data:hover::after{
+    .list-item:nth-child(3n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:nth-child(3n +1) .list-table-data:hover::after{
         left: auto;
     }
-    .list-item:nth-child(2n +1).list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:nth-child(2n +1).list-table-data:hover::after{
+    .list-item:nth-child(2n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:nth-child(2n +1) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
     }
 }
