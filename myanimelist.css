@@ -2463,12 +2463,14 @@ a {
 
 .list-table-data:hover .data.title{
     top: 0;
+    height: 45px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .list-table-data:hover .data.type {
     top: 5em;
+    height: 15px;
 }
 .list-table-data:hover .data.type::before {
     content: "Type: ";
@@ -2477,6 +2479,7 @@ a {
 
 .list-table-data:hover .data.genre {
     top: 7em;
+    height: 45px;
 }
 .list-table-data:hover .data.genre::before {
     content: "Genres: ";
@@ -2485,6 +2488,7 @@ a {
 
 .list-table-data:hover .data.studio {
     top: 12em;
+    height: 45px;
 }
 .list-table-data:hover .data.studio::before {
     content: "Studio: ";
@@ -2492,17 +2496,13 @@ a {
 }
 
 .list-table-data:hover .data.licensor{
-    top: 14em;
+    top: 16.5em;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .list-table-data:hover .data.licensor::before{
     content: "Licensor: ";
     color: var(--sakura-pink);
-}
-
-.list-table .list-table-data:hover .data::before{
-
 }
 
 body{
@@ -3254,6 +3254,7 @@ tbody:has(.list-table-header){
     padding-left: 10px;
     padding-right: 10px;
     right: -100%;
+    overflow: hidden;
 }
 .list-table-data:hover::after{
     content: "";
