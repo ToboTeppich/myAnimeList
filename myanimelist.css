@@ -3275,6 +3275,22 @@ tbody:has(.list-table-header){
     z-index: 0;
     border-radius: 10px;
 }
+
+/* Mindestens 1 leer */
+.list-table-data:hover:has(.data:where(.genre, .studio, .licensor):not(:has(*)))::after {
+    height: 200px;
+  }
+  
+  /* Genau 2 leer (Beispiel) */
+  .list-table-data:hover:has(.data.genre:not(:has(*))):has(.data.studio:not(:has(*))):not(:has(.data.licensor *))::after {
+    background: orange;
+  }
+  
+  /* Alle 3 leer */
+  .list-table-data:hover:has(.data.genre:not(:has(*))):has(.data.studio:not(:has(*))):has(.data.licensor:not(:has(*)))::after {
+    background: red;
+  }
+
 @media (max-width: 1600px) { /* 5 thumbnails layout */
     .list-item:nth-child(5n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item:nth-child(5n +1) .list-table-data:hover::after{
