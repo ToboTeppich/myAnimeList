@@ -662,7 +662,7 @@ a {
 
     /* edited */
     margin-top: 350px;
-    width: var(--content-width);
+    width: auto;
     height: 150px;
     /* edited */
 
@@ -695,6 +695,9 @@ a {
 
     /* edited */
     position: static;
+    background-image: none;
+    text-indent: 0;
+    visibility: hidden;
     /* edited */
 
 }
@@ -2897,6 +2900,10 @@ option{
 
 .header .header-title::before {
     content: '🔙';
+    visibility: visible;
+    font-size: 48pt;
+    position: absolute;
+    left: 12px;
 }
 
 .list-table .list-table-data .data.image a:hover::after,
