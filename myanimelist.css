@@ -48,6 +48,7 @@
     color: white;
     border: none;
     border-radius: 25px;
+    position: fixed;
     /* edited */
 
 }
@@ -1772,7 +1773,8 @@ a {
 
     /* edited */
     background-color: transparent;
-    width: var(--content-width);
+    width: auto;
+    max-width: var(--content-width);
     position: absolute;
     margin-top: -100px;
     /* edited */
@@ -1801,7 +1803,6 @@ a {
     vertical-align: middle;
 
     /* edited*/
-    width: auto;
     font-family: inherit;
     color: var(--sakura-pink);
     /* edited*/
@@ -1859,6 +1860,8 @@ a {
     background-color: transparent;
     position: absolute;
     margin-top: -73px !important;
+    max-width: var(--content-width);
+    width: 100%;
     /* edited */
 
 }
