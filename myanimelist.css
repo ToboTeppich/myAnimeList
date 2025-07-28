@@ -1,4 +1,5 @@
 /* edited */
+@\import "https://toboteppich.github.io/myAnimeList/all.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* edited */
 
@@ -2886,7 +2887,6 @@ option{
 }
 
 .list-unit .list-stats span .floatRightHeader{
-    float: none;
     color: var(--sakura-pink);
 }
 
@@ -2899,7 +2899,7 @@ option{
 }
 
 .header .header-title::before {
-    content: '🔙';
+    content: "\f015";
     visibility: visible;
     font-size: 48pt;
     position: absolute;
