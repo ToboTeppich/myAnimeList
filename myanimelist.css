@@ -1855,6 +1855,7 @@ a {
 
     /* edited */
     right: 0;
+    font-size: 0;
     /* edited */
 
 }
@@ -1869,6 +1870,7 @@ a {
     /* edited */
     color: var(--sakura-pink);
     font-size: 11pt;
+    margin: 0px;
     /* edited */
 
 }
@@ -2930,9 +2932,7 @@ option{
     padding-left: 12px;
 }
 
-#list-container .list-block .list-unit .list-table .list-table-header .header-title {
-    padding-left: 12px;
-}
+
 
 .header .header-title::before {
     content: "\f015";
@@ -3021,6 +3021,7 @@ option{
     border-radius: 8px;
     transition-duration: 0.3s;
     transition-timing-function: ease;
+    margin-left: 12px;
 }
 .list-table .list-table-header .header-title .link.sort:hover, .list-unit .list-status-title .stats a:hover {
     background-color: rgba(255, 255, 255, 0.2);
