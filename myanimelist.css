@@ -1,5 +1,5 @@
 /* edited */
-@\import "https://toboteppich.github.io/myAnimeList/all.min.css";
+@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/resources/font-awesome-4.7.0/css/font-awesome-force-legacy.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* edited */
 
@@ -42,15 +42,6 @@
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
 
     z-index: 1101;
-
-    /* edited */
-    font-family: inherit;
-    background-color: var(--background-color-2);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    position: fixed;
-    /* edited */
 
 }
 
@@ -475,11 +466,6 @@
 
     transition-timing-function: ease-in-out;
 
-    /* edited */
-    background-color: var(--sakura-pink);
-    color: var(--background-color);
-    /* edited */
-
 }
 
 
@@ -545,6 +531,10 @@ a {
     color: #1d439b;
 
     text-decoration: none;
+
+    /* edited */
+    text-decoration: none !important;
+    /* edited */
 
 }
 
@@ -662,9 +652,11 @@ a {
     margin: 0 auto;
 
     /* edited */
-    margin-top: 350px;
+    margin-top: 325px;
+    max-width: var(--content-width);
+    height: 100px;
+    display: flex;
     width: auto;
-    height: 150px;
     /* edited */
 
 }
@@ -698,7 +690,8 @@ a {
     position: static;
     background-image: none;
     text-indent: 0;
-    visibility: hidden;
+    height: fit-content;
+    font-size: 0;
     /* edited */
 
 }
@@ -714,6 +707,9 @@ a {
 
     /* edited */
     position: static;
+    max-width: var(--content-width);
+    display: flex;
+    width: 100%;
     /* edited */
 
 }
@@ -735,6 +731,9 @@ a {
 
     /* edited */
     text-align: left;
+    font-size: 0;
+    padding-left: 15px;
+    margin-right: auto;
     /* edited */
 
 }
@@ -751,7 +750,8 @@ a {
     text-align: right;
 
     /* edited */
-    text-align: left;
+    font-size: 0;
+    margin: 0px;
     /* edited */
 
 }
@@ -760,6 +760,15 @@ a {
 .header .username {
 
     font-weight: bold;
+
+    /* edited */
+    position: relative;
+    font-size: 20pt;
+    color: var(--sakura-pink);
+    min-width: 150px;
+    text-align: center;
+    display: inline-block;
+    /* edited */
 
 }
 
@@ -785,6 +794,14 @@ a {
     box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
 
     z-index: 1;
+
+    /* edited */
+    position: static;
+    display: block !important;
+    border: none;
+    background-color: transparent;
+    height: fit-content;
+    /* edited */
 
 }
 
@@ -827,14 +844,18 @@ a {
 
     -webkit-transition-timing-function: ease-in-out;
 
-    transition-timing-function: ease-in-out
+    transition-timing-function: ease-in-out;
+
+    /* edited */
+    height: auto;
+    /* edited */
 
 }
 
 
 .header .header-menu .list-menu .icon-menu:hover {
 
-    background-color: #e1e7f5
+    background-color: #e1e7f5;
 
 }
 
@@ -849,6 +870,10 @@ a {
 
     top: 4px;
 
+    /* edited */
+    position: static;
+    /* edited */
+
 }
 
 
@@ -859,6 +884,10 @@ a {
     left: 52px;
 
     top: 6px;
+
+    /* edited */
+    position: static;
+    /* edited */
 
 }
 
@@ -1808,7 +1837,7 @@ a {
 
     /* edited*/
     font-family: inherit;
-    color: var(--sakura-pink);
+    color: white
     /* edited*/
 
 }
@@ -1824,6 +1853,10 @@ a {
 
     right: 4px;
 
+    /* edited */
+    right: 0;
+    /* edited */
+
 }
 
 
@@ -1832,6 +1865,11 @@ a {
     margin-right: 8px;
 
     color: #FFF;
+
+    /* edited */
+    color: var(--sakura-pink);
+    font-size: 11pt;
+    /* edited */
 
 }
 
@@ -2202,24 +2240,12 @@ a {
 
     transition-timing-function: ease-in-out;
 
-    /* edited */
-    color: white;
-    padding: 12px;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 8px;
-    /* edited */
-
 }
 
 
 .list-table .list-table-header .header-title .link.sort:hover {
 
     color: #2556c6;
-
-    /* edited */
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    /* edited */
 
 }
 
@@ -2267,6 +2293,10 @@ a {
 .list-table .list-table-data a:not(.edit-disabled):hover {
 
     text-decoration: underline;
+
+    /* edited */
+    text-decoration: none;
+    /* edited */
 
 }
 
@@ -2384,21 +2414,19 @@ a {
 
     /* edited */
     position: absolute;
-    padding-bottom: 10px;
-    padding-top: 7px;
-    padding-right: 5px;
+    padding: 10px;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 2rem;
     pointer-events: none;
-    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: var(--info-round);
     backdrop-filter: var(--default-blur);
     /*
 
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
+    border-top-right-radius: var(--info-round);
+    border-bottom-left-radius: var(--info-round);
 
     
 
@@ -2416,6 +2444,10 @@ a {
     margin-right: 10px;
 
     font-size: 0.9em;
+
+    /* edited */
+    visibility: hidden;
+    /* edited */
 
 }
 
@@ -2564,6 +2596,11 @@ a {
     --anime-info-shift-left: -100%;
     --default-blur: blur(25px);
     --screen-blur: blur(1px) grayscale(25%);
+    --font-icon: "FontAwesome 4",FontAwesome;
+    --font-1: "Montserrat", sans-serif;
+    --move-add-button-right: -39%;
+    --move-add-button-left: -130%;
+    --info-round: 7px;
 }
 
 .list-table-data:hover .data.title{
@@ -2728,22 +2765,22 @@ body{
 .list-table .list-table-data .data.number {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     font-size: 1rem;
-    border-top-right-radius: 7px;
+    border-top-left-radius: var(--info-round);
     /*
-    border-top-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-top-left-radius: var(--info-round);
+    border-bottom-right-radius: var(--info-round);
     */
     pointer-events: none;
     backdrop-filter: var(--default-blur);
 }
 
 .list-table .list-table-data .data.number::before {
-    content: "#";
+    content: '#';
 }
 
 .score-10::before{
@@ -2814,7 +2851,7 @@ body.ownlist {background: none;}
 }
 
 tbody:has(.list-table-header){
-    margin-bottom: 64px;
+    margin-bottom: 50px;
 }
 
 .list-menu-float form:has(.icon-menu){
@@ -2832,7 +2869,7 @@ tbody:has(.list-table-header){
 }
 
 *{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-1);
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -2853,7 +2890,6 @@ tbody:has(.list-table-header){
     padding-left: 10px;
     padding-right: 10px;
     right: -100%;
-    overflow: hidden;
 }
 .list-table-data:hover::after{
     content: "";
@@ -2900,11 +2936,132 @@ option{
 
 .header .header-title::before {
     content: "\f015";
-    visibility: visible;
-    font-size: 48pt;
-    position: absolute;
-    left: 12px;
+    font-family: var(--font-icon);
 }
+.header .header-title::after {
+    content: "Home";
+}
+
+.list-table .list-table-data .data.title .add-edit-more .add {
+    position: absolute;
+    left: var(--move-add-button-left);
+    top: 15px;
+    visibility: visible;
+}
+
+.list-table .list-table-data .data.title .add-edit-more .add .List_LightBox {
+    pointer-events: all;
+    font-size: 0rem;
+    font-weight: bold;
+    color: var(--sakura-pink);
+}
+
+.list-table .list-table-data .data.title .add-edit-more .add .List_LightBox::before {
+    content: '\f055';
+    font-family: var(--font-icon);
+    font-size: 2rem;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: var(--info-round);
+    backdrop-filter: var(--default-blur);
+}
+
+
+.list-table .list-table-data .data.title .icon-watch2 .mal-icon .malicon-streaming{
+    color: var(--sakura-pink);
+}
+
+.list-table .list-table-data .data.title .icon-watch2 .mal-icon .malicon-streaming::before{
+    content: '\f1eb';
+    font-family: var(--font-icon) !important;
+}
+
+.header .header-menu .header-info a:first-child{
+    display: inline-block;
+    font-size: 16pt;
+}
+.header .header-menu .header-info a:first-child, .header .header-menu .list-menu .icon-menu, .header .header-title{
+    width: 17px;
+    white-space: nowrap;
+    transition: 0.3s;
+    overflow: hidden;
+    color: var(--sakura-pink);
+    background-color: rgba(255,255,255,0.1);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    text-align: left;
+    font-size: 0;
+
+}
+.header .header-menu .header-info a:first-child:hover, .header .header-menu .list-menu .icon-menu:hover,.header .header-title:hover{
+    width: 107px;
+    background-color: rgba(255,255,255,0.2);;
+}
+.header .header-menu .header-info a:first-child::before, .header .header-menu .list-menu .icon-menu svg.icon, .header .header-title::before{
+    padding-right: 19px;
+    fill: var(--sakura-pink);
+}
+.header .header-menu .header-info a:first-child::before{
+    content: '\f007';
+    font-family: var(--font-icon);
+}
+
+.header .header-menu .header-info a:first-child, .header .header-menu .list-menu .icon-menu, .header .header-title::before, .header .header-title::after {
+    font-size: 14pt;
+}
+
+
+
+.list-table .list-table-header .header-title .link.sort, .list-unit .list-status-title .stats a {
+    color: var(--sakura-pink);
+    padding: 12px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+.list-table .list-table-header .header-title .link.sort:hover, .list-unit .list-status-title .stats a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#advanced-options .btn-apply, #advanced-options .btn-clear, .dark-mode .page-common .inputButton {
+    background-color: var(--sakura-pink);
+    color: var(--background-color);
+}
+
+#advanced-options {
+    font-family: inherit;
+    background-color: var(--background-color-2);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    position: fixed;
+}
+
+
+
+/*.list-table .list-table-data .data.image a:has(.list-table .list-table-data .data.title .add-edit-more .add .List_LightBox:hover)::after,
+.list-table .list-table-data .data.image a:has(.list-table .list-table-data .data.title .add-edit-more .add .List_LightBox:hover)::before  {
+    content: '';
+    position: absolute;
+    background-image: conic-gradient(from 0deg, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    translate: -50% -50%;
+    padding: 9px;
+    border-radius: 9px;
+    animation-name: spin, spin-showup;
+    animation-duration: 0.2s, 0.5s;
+    animation-iteration-count: infinite, 1;
+}*/
+
+
 
 .list-table .list-table-data .data.image a:hover::after,
 .list-table .list-table-data .data.image a:hover::before {
@@ -2944,7 +3101,8 @@ option{
     animation-delay: 0s, 0s, 0.5s;
 }
 
-body.ownlist:has(.data.image:hover)::before{
+body.ownlist:has(.data.image:hover)::before,
+body.ownlist:has(.list-table .list-table-data .data.title .add-edit-more .add .List_LightBox:hover)::before{
     content: '';
     z-index: 2;
     top: 0px;
@@ -3418,59 +3576,154 @@ body.ownlist::before{
 
 
 @media (max-width: 1600px) { /* 5 thumbnails layout */
+
+
+    /* set new values */
     .list-item:nth-child(5n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item:nth-child(5n +1) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
     }
+
+    .list-item:nth-child(5n +1) .list-table-data .data.title .add-edit-more .add{
+        left: auto;
+        right: var(--move-add-button-right);
+    }
+    .list-item:nth-child(5n +1) .list-table-data .data.title .add-edit-more .add .List_LightBox::before{
+        border-bottom-right-radius: var(--info-round);
+    }
 }
 @media (max-width: 1230px) { /* 5 thumbnails layout */
+
+
+    /* set new values */
     .list-item:nth-child(5n) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item:nth-child(5n) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
     }
+
+    .list-item:nth-child(5n) .list-table-data .data.title .add-edit-more .add{
+        left: auto;
+        right: var(--move-add-button-right)
+    }
+    .list-item:nth-child(5n) .list-table-data .data.title .add-edit-more .add .List_LightBox::before{
+        border-bottom-right-radius: var(--info-round);
+    }
 }
 @media (max-width: 1016px) { /* 4 thumbnails layout */
+
+    /* reset old values */
     .list-item:nth-child(5n) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item:nth-child(5n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item:nth-child(5n) .list-table-data:hover::after,
     .list-item:nth-child(5n +1) .list-table-data:hover::after{
         left: auto;
     }
-    .list-item:nth-child(4n) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+
+    .list-item:nth-child(5n +1) .list-table-data .data.title .add-edit-more .add,
+    .list-item:nth-child(5n) .list-table-data .data.title .add-edit-more .add{
+        right: auto;
+        left: var(--move-add-button-left);
+    }
+    
+
+
+    /* set new values */
     .list-item:nth-child(4n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:nth-child(4n) .list-table-data:hover::after,
-    .list-item:nth-child(4n +1) .list-table-data:hover::after{
+    .list-item:nth-child(4n) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:nth-child(4n +1) .list-table-data:hover::after,
+    .list-item:nth-child(4n) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
     }
+
+    .list-item:nth-child(4n +1) .list-table-data .data.title .add-edit-more .add,
+    .list-item:nth-child(4n) .list-table-data .data.title .add-edit-more .add{
+        left: auto;
+        right: var(--move-add-button-right);
+    }
+
 }
 @media (max-width: 815px) { /* 3 thumbnails layout */
-    .list-item:nth-child(4n) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+
+
+    /* reset old values */
     .list-item:nth-child(4n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
-    .list-item:nth-child(4n) .list-table-data:hover::after,
-    .list-item:nth-child(4n +1) .list-table-data:hover::after{
+    .list-item:nth-child(4n) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:nth-child(4n +1) .list-table-data:hover::after,
+    .list-item:nth-child(4n) .list-table-data:hover::after{
         left: auto;
     }
+
+    .list-item:nth-child(4n +1) .list-table-data .data.title .add-edit-more .add,
+    .list-item:nth-child(4n) .list-table-data .data.title .add-edit-more .add{
+        right: auto;
+        left: var(--move-add-button-left);
+    }
+
+
+
+    /* set new values */
     .list-item:nth-child(3n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item:nth-child(3n +1) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
+    }
+
+    .list-item:nth-child(3n +1) .list-table-data .data.title .add-edit-more .add{
+        left: auto;
+        right: var(--move-add-button-right);
     }
 }
 @media (max-width: 612px) { /* 2 thumbnails layout */
+
+    /* reset old values */
     .list-item:nth-child(3n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item:nth-child(3n +1) .list-table-data:hover::after{
         left: auto;
     }
+
+    .list-item:nth-child(3n +1) .list-table-data .data.title .add-edit-more .add{
+        right: auto;
+        left: var(--move-add-button-left);
+    }
+
+
+
+    /* set new values */
     .list-item:nth-child(2n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item:nth-child(2n +1) .list-table-data:hover::after{
         left: var(--anime-info-shift-left);
+    }
+
+    .list-item:nth-child(2n +1) .list-table-data .data.title .add-edit-more .add{
+        left: auto;
+        right: var(--move-add-button-right);
     }
 }
 @media (max-width: 410px) { /* 1 thumbnails layout */
     .list-item .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
     .list-item .list-table-data:hover::after{
+        /*
         display: none !important;
+        */
+        visibility: hidden;
+    }
+
+    .list-table-data .data.title .add-edit-more .add{
+        visibility: visible;
+    }
+
+    /* reset old values */
+    .list-item:nth-child(2n +1) .list-table-data:hover .data:where(.title, .type, .genre, .studio, .licensor),
+    .list-item:nth-child(2n +1) .list-table-data:hover::after{
+        left: auto;
+    }
+
+    .list-item:nth-child(2n +1) .list-table-data .data.title .add-edit-more .add{
+        right: auto;
+        left: var(--move-add-button-left);
     }
 }
+
+
 
 /*.list-table .list-table-data .data.image:hover ~ .data.title{
     display: block !important;
