@@ -550,8 +550,8 @@ a {
     font-family: Avenir, "lucida grande", tahoma, verdana, arial, sans-serif;
 
     /* edited */
-    background-color: var(--sakura-pink);
     font-family: inherit;
+    background-color: var(--sakura-pink);
     /* edited */
 
 }
@@ -568,7 +568,7 @@ a {
     text-align: center;
 
     /* edited */
-    color: white;
+    color:var(--background-color);
     /* edited */
 
 }
@@ -583,7 +583,7 @@ a {
     color: #9caed9;
 
     /* edited */
-    color: white;
+    color: var(--background-color);
     /* edited */
 
 }
@@ -593,7 +593,7 @@ a {
     color: #9caed9;
 
     /* edited */
-    color: white;
+    color:blue
     /* edited */
 
 }
@@ -603,7 +603,7 @@ a {
     color: #e5eaf5;
 
     /* edited */
-    color: #9caed9;
+    color:magenta
     /* edited */
 
 }
