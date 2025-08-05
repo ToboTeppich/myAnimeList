@@ -2991,7 +2991,7 @@ option{
     border-radius: 9999px;
     text-align: left;
     font-size: 0;
-
+    margin-left: 12px;
 }
 .header .header-menu .header-info a:first-child:hover, .header .header-menu .list-menu .icon-menu:hover,.header .header-title:hover{
     width: 107px;
