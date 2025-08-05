@@ -2861,8 +2861,6 @@ tbody:has(.list-table-header){
     display: none !important;
 }
 
-.qc-cmp2-container{display: none;}
-
 .list-item .list-table-data .data *{
     color: white;
 }
