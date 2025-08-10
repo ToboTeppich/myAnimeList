@@ -2844,7 +2844,8 @@ body.ownlist {background: none;}
     transition: 0.3s;
 }
 
-.list-table .list-table-header .header-title .link.sort:has(.fa-solid){
+.list-table .list-table-header .header-title .link.sort:has(.fa-solid),
+.list-table .list-table-header .header-title .link.sort:has(.fa-solid):hover{
     color: var(--background-color);
     background-color: var(--sakura-pink);
 }
