@@ -3041,6 +3041,17 @@ option{
     position: fixed;
 }
 
+.status-menu .status-button.watching{
+    font-size: 0;
+}
+
+.status-menu .status-button.watching::before{
+    content: 'Watching';
+    font-size: 17.6px;
+}
+
+
+
 
 
 /*.list-table .list-table-data .data.image a:has(.list-table .list-table-data .data.title .add-edit-more .add .List_LightBox:hover)::after,
