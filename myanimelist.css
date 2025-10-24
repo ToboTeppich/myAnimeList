@@ -2784,7 +2784,7 @@ body{
 }
 
 .score-10::before{
-    content: 🏆';
+    content: '🏆';
 }
 
 .score-9::before{
