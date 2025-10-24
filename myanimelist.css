@@ -2784,15 +2784,55 @@ body{
 }
 
 .score-10::before{
-    content: "🏆";
+    content: 🏆';
 }
 
 .score-9::before{
-    content: "🥈";
+    content: '🥈';
 }
 
 .score-8::before{
-    content: "🥉";
+    content: '🥉';
+}
+
+.score-4{
+    font-size: 0;
+    line-height: 0;
+}
+.score-4::before{
+    content: '3';
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
+.score-3{
+    font-size: 0;
+    line-height: 0;
+}
+.score-3::before{
+    content: '2';
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
+.score-2{
+    font-size: 0;
+    line-height: 0;
+}
+.score-2::before{
+    content: '1';
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
+.score-1{
+    font-size: 0;
+    line-height: 0;
+}
+.score-1::before{
+    content: '0';
+    font-size: 2rem;
+    line-height: 1rem;
 }
 
 
